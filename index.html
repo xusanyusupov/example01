@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-    
-   
-    <script src="main.js"></script>
+<body class="bod">
+  <div class="tasbeh">
+   <div class="topAll">
+    <button id="incrementBtn" class="button-increment">click</button>
+    <button id="resetBtn" class="button-reset">Reset</button>
+   </div>
+   <div class="all">
+    <div id="counter">  0</div>
+    <div id="divCount">
+        <b class="b">0</b>
+    </div>
+   </div>
+  </div>
+  <audio class="audio" src="./level-up-191997.mp3"></audio>
+
+
+
+  <button onclick="darkMod()" class="dark"><i class="fa-solid fa-moon"></i></button>
+  <button onclick="sunMod()" class="sun"><i class="fa-solid fa-sun"></i></button>
+  <script src="main.js"></script>
 </body>
 </html>

@@ -88,3 +88,53 @@
 //     const simpleMultiplication = number => number % 2 === 0 ? number * 8 : number * 9
 //     /////son toq bo'lsa 9 ka ko'paytrladi aks holatda 8ga
 // }
+
+
+
+
+let count = 0;
+    let divCount = 0;
+
+    const counterElement = document.getElementById('counter');
+    const divCountElement = document.getElementById('divCount');
+    const incrementBtn = document.getElementById('incrementBtn');
+    const resetBtn = document.getElementById('resetBtn');
+    const btext = document.querySelector('.b')
+    const audio = document.querySelector('.audio')
+
+
+    incrementBtn.addEventListener('click', function() {
+      count++; 
+      counterElement.textContent = ` ${count}`;
+      if (count === 33) {
+        divCount++;
+        audio.play()
+        btext.textContent = ` ${divCount}`;
+        count = 0; 
+      }
+    });
+
+    resetBtn.addEventListener('click', function() {
+      count = 0;
+      counterElement.textContent = ` ${count}`;
+    });
+
+
+
+    let bod = document.querySelector('.bod')
+    let dark = document.querySelector('.dark')
+    let topAll = document.querySelector('.topAll')
+
+    function darkMod() {
+        bod.style = `
+            background-color: black;
+        `
+    }
+    
+    function sunMod() {
+        bod.style = `
+            background-color: white;
+        `
+    }
+    
+
